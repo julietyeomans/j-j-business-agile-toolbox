@@ -1,0 +1,39 @@
+h1{
+  font-family: helvetica;
+  font-weight: bold;
+  color: #1164FC;
+
+}
+h2 {
+  color: #f95c16;
+  text-align: left;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size:25px
+}
+
+body{
+font-family: helvetica;
+font-size: 14px;
+}
+ol{
+line-height: 2;
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}

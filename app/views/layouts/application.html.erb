@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title><%= yield(:title) %> | rVR Engagement Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= favicon_link_tag 'HomePage/rv.ico' %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav class = "menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '/' %></li>
+            <li><%= link_to "What is rVR?", '/static_pages/core' %> </li>
+            <li><%= link_to "Workshop Approach", '/static_pages/ws_approach' %> </li>
+            <li><%= link_to "Agile Simulation", '/static_pages/enable' %> </li>
+            <li><%= link_to "Engagement Toolkit", '/static_pages/resources' %> </li>
+            <li><%= link_to "Playbook", '/plays' %> </li>
+            <li><%= link_to "Our Site", 'https://jnj.sharepoint.com/teams/rapidValueRealization2/SitePages/rapid%20Value.aspx?web=1', :target=> "_blank"  %> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+  <small>
+    For more help reach out to our<strong><a href="https://www.yammer.com/its.jnj.com/#/threads/inGroup?type=in_group&feedId=12335628" target = "_blank"> Community of Practice</a></strong>
+  </small>
+
+</footer>
+  </body>
+</html>
