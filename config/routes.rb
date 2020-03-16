@@ -22,6 +22,32 @@ Rails.application.routes.draw do
 
  get "plays/experimentArtGallery", to: "plays#experimentArtGallery"
 
+ get "experiments", to: "experiments#experimentIndex", as: :experiments
+
+ get "experiments/contextualInquiry", to: "experiments#contextualInquiry"
+
+ get "experiments/dayInTheLife", to: "experiments#dayInTheLife"
+
+ get "experiments/concierge", to: "experiments#concierge"
+
+ get "experiments/customerInterviews", to: "experiments#customerInterviews"
+
+ get "experiments/discoverySurvey", to: "experiments#discoverySurvey"
+
+ get "experiments/webAnalytics", to: "experiments#webAnalytics"
+
+ get "experiments/wizardOfOz", to: "experiments#wizardOfOz"
+
+ get "experiments/popupShop", to: "experiments#popupShop"
+
+ get "experiments/conferenceRoomPilot", to: "experiments#conferenceRoomPilot"
+
+ get "experiments/prototype", to: "experiments#prototype"
+
+ get "experiments/fakeFrontDoor", to: "experiments#fakeFrontDoor"
+
+ get "experiments/judo", to: "experiments#judo"
+
   get 'static_pages/home'
 
   get 'static_pages/core'
